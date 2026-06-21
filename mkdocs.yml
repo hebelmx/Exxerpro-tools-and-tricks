@@ -25,6 +25,11 @@ nav:
   - Home: index.md
   - PowerToys:
       - ZoomIt Live Zoom: powertoys/zoomit-livezoom.md
+  - Docker & WSL:
+      - Docker Desktop / WSL2 recovery: docker-wsl/docker-desktop-wsl2-recovery.md
+      - Modern Standby freezes & corruption: docker-wsl/modern-standby-freezes-wsl-corruption.md
+  - VMware:
+      - Fast Windows 11 VMs: vmware/windows-11-vm-performance.md
 
 markdown_extensions:
   - admonition

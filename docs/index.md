@@ -12,6 +12,11 @@ personal data. If something looks generic, that's on purpose — replace placeho
 - **PowerToys** — getting the most out of Microsoft PowerToys, and undoing it when it
   surprises you.
     - [ZoomIt Live Zoom — the "stuck zoomed desktop" fix](powertoys/zoomit-livezoom.md)
+- **Docker & WSL** — keeping Docker Desktop and WSL2 alive on Windows.
+    - [Docker Desktop / WSL2 recovery — engine won't start after a crash](docker-wsl/docker-desktop-wsl2-recovery.md)
+    - [Modern Standby freezes — the real cause of repeated corruption](docker-wsl/modern-standby-freezes-wsl-corruption.md)
+- **VMware** — running VMs alongside Docker/WSL2 without the speed tax.
+    - [Fast Windows 11 VMs without breaking Docker/WSL2](vmware/windows-11-vm-performance.md)
 
 More to come as notes are reviewed and cleared for publishing.
 
