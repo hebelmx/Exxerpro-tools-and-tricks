@@ -30,6 +30,8 @@ nav:
       - Modern Standby freezes & corruption: docker-wsl/modern-standby-freezes-wsl-corruption.md
   - VMware:
       - Fast Windows 11 VMs: vmware/windows-11-vm-performance.md
+  - Remote access:
+      - SSH into Windows VMs (+ RDP over SSH): remote-access/ssh-into-windows-vms.md
 
 markdown_extensions:
   - admonition

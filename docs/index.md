@@ -17,6 +17,8 @@ personal data. If something looks generic, that's on purpose — replace placeho
     - [Modern Standby freezes — the real cause of repeated corruption](docker-wsl/modern-standby-freezes-wsl-corruption.md)
 - **VMware** — running VMs alongside Docker/WSL2 without the speed tax.
     - [Fast Windows 11 VMs without breaking Docker/WSL2](vmware/windows-11-vm-performance.md)
+- **Remote access** — reaching your machines headlessly.
+    - [SSH into Windows VMs (incl. offline Windows 7) + RDP over SSH](remote-access/ssh-into-windows-vms.md)
 
 More to come as notes are reviewed and cleared for publishing.
 
