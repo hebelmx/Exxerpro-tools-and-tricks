@@ -22,7 +22,7 @@ git config core.hooksPath .githooks
 The scanner uses two rule sets:
 
 - **Generic, committed** rules in `tools/Privacy-Scan.ps1` — private keys, GitHub/Slack
-  tokens, AWS keys, `secret=`/`password=` assignments. Safe to be public.
+  tokens, AWS keys, and secret/password-style assignments. Safe to be public.
 - **Local, gitignored** rules in `tools/privacy-rules.local` — your person/machine-specific
   patterns (real name, email, local paths, client names). **This file is never committed**,
   so the very things it protects don't leak through it. Recreate it on a new machine.
