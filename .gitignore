@@ -1,0 +1,15 @@
+# Zensical / build output
+site/
+.cache/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
