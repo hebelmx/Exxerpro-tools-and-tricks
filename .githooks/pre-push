@@ -1,0 +1,27 @@
+#!/bin/sh
+# Privacy gate: block the push if tracked files contain private/sensitive data.
+# Enabled via:  git config core.hooksPath .githooks
+#
+# To bypass intentionally (NOT recommended): git push --no-verify
+
+echo "[privacy] scanning tracked files before push..."
+
+if command -v pwsh >/dev/null 2>&1; then
+  PS=pwsh
+elif command -v powershell >/dev/null 2>&1; then
+  PS=powershell
+else
+  echo "[privacy] ERROR: no PowerShell found (pwsh/powershell) to run the scan." >&2
+  echo "[privacy] Refusing to push without a privacy scan. Install PowerShell or run the scan manually." >&2
+  exit 1
+fi
+
+"$PS" -NoProfile -ExecutionPolicy Bypass -File "tools/Privacy-Scan.ps1"
+if [ $? -ne 0 ]; then
+  echo "[privacy] PUSH BLOCKED." >&2
+  echo "[privacy] Scrub the findings (see AUTHORING.md)." >&2
+  echo "[privacy] If the data was already committed, purge it from history (see PRIVACY.md)." >&2
+  exit 1
+fi
+
+exit 0

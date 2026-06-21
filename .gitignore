@@ -2,6 +2,10 @@
 site/
 .cache/
 
+# Local-only privacy rules (person/machine patterns must never be committed)
+tools/privacy-rules.local
+*.local
+
 # Python
 .venv/
 __pycache__/
